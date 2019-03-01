@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+
+<body>
+<h1>Add a Teacher</h1>
+<!--FORM USED TO CREATE ENTRIES-->
+<form method="post">
+    {{teacherform.as_p}}
+    {% csrf_token %}
+    <button>Submit</button>
+</form>
+
+
+</body>
+</html>

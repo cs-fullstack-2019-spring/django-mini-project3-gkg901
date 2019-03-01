@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+</head>
+<body>
+<!--FORM WITH BUTTON TO DELETE ENTRY-->
+<form method="post">
+    {% csrf_token %}
+    Are you sure you want to delete "{{selectedteacher}}" ?
+    <button>Submit</button>
+    <!--LINK TO CANCEL AND RETURN TO INDEX.HTML-->
+    <a href="{% url 'index' %}">Cancel and return to Teacher list</a>
+</form>
+
+
+</body>
+</html>

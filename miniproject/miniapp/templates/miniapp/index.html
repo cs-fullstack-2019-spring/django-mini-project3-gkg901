@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<!--LINK TO CREATE ENTRY-->
+<a href="{% url 'create' %}">Add a Teacher</a>
+<!--LOOP ITERATES THROUGH QUERYSET AND DISPLAYS SELECTED ELEMENTS-->
+{% for eachElement in teacherlist %}
+<p>{{eachElement.name}}</p>
+<p>{{eachElement.school}}</p>
+<p>{{eachElement.subject}}</p>
+<p>Hours:{{eachElement.hours}}</p>
+<p>Date of work: {{eachElement.date_of_work}}</p>
+
+<!--LINKS TO EDIT AND DELETE ENTRIES-->
+<p><a href="{% url 'edit' eachElement.id %}">Edit Teacher</a></p>
+<p><a href="{% url 'delete' eachElement.id %}">Delete Teacher</a></p>
+
+<hr/>
+{% endfor %}
+
+
+</body>
+</html>
