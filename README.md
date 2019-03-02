@@ -1,3 +1,6 @@
+### POINTS: 1.5
+### KEY: Your filter attempt weak, but mostly correct. Next time ask your Sister for help, and I hope she says 'NO' :-)
+
 # Mini-Project Django
 
 THIS IS A SOLO PROJECT.
